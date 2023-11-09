@@ -186,6 +186,24 @@ public:
         }
         cout << endl;
     }
+    bool is_in_list(int x)
+    {
+        if (is_empty())
+        {
+            cout << "List is empty";
+        }
+        else
+        {
+            SNode *t = head;
+            while (t != NULL)
+            {
+                if (t->d == x)
+                    return true;
+                t = t->next;
+            }
+            return false;
+        }
+    }
     int get_head()
     {
         if (!is_empty())
