@@ -79,8 +79,10 @@ int main()
     int n;
     cin >> n;
 
-    int arr[] = {12, 4, 22, 57, 4, 2, 0};
-    QuickSort(arr, 0, 6);
+    int arr[n];
+    for(int i=0;i<n;i++){cin>>arr[i];}
+    //int arr[] = {12, 4, 22, 57, 4, 2, 0};
+    QuickSort(arr, 0, n-1);
     // QuickSortIt(arr, 0, 6);
-    display(arr, 7);
+    display(arr, n);
 }
